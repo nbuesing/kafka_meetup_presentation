@@ -6,5 +6,6 @@
 * 3 Microservices
   * Geolocation RESTful API
   * Kafka Steams
-  * Consumer / Presentation
+  * Kafka Consumer & D3 Web Application
 * KSQL
+  * Custom Library
