@@ -1,0 +1,21 @@
+## AVRO
+
+#### Aircraft
+
+```json
+{
+  "namespace": "com.objectpartners.buesing.avro",
+  "name": "Aircraft",
+  "type": "record",
+  "fields": [
+    {
+      "name": "transponder",
+      "type": "string"
+    },
+    {
+      "name": "callsign",
+      "type": "string"
+    }
+  ]
+}
+```

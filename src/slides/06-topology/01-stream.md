@@ -1,0 +1,23 @@
+#### Topology : Stream : nearest airport
+
+```
+   Sub-topology: 0
+    Source: KSTREAM-SOURCE-0000000000 (topics: [red])
+      --> KSTREAM-MAP-0000000016, KSTREAM-MAP-0000000002
+    Processor: KSTREAM-MAP-0000000016 (stores: [])
+      --> KSTREAM-KEY-SELECT-0000000017
+      <-- KSTREAM-SOURCE-0000000000
+    Processor: KSTREAM-KEY-SELECT-0000000017 (stores: [])
+      --> KSTREAM-FILTER-0000000021
+      <-- KSTREAM-MAP-0000000016
+    Processor: KSTREAM-FILTER-0000000021 (stores: [])
+      --> KSTREAM-SINK-0000000020
+      <-- KSTREAM-KEY-SELECT-0000000017
+    Processor: KSTREAM-MAP-0000000002 (stores: [])
+      --> KSTREAM-SINK-0000000003
+      <-- KSTREAM-SOURCE-0000000000
+    Sink: KSTREAM-SINK-0000000003 (topic: red.nearest.airport)
+      <-- KSTREAM-MAP-0000000002
+    Sink: KSTREAM-SINK-0000000020 (topic: KSTREAM-KEY-SELECT-0000000017-repartition)
+      <-- KSTREAM-FILTER-0000000021
+```

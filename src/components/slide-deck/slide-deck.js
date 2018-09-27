@@ -82,7 +82,7 @@ export class SlideDeck extends Component {
       <div className="reveal">
         <div className="slides">
           <section data-state="title">
-            <h1>Starter Kit</h1>
+            <h1>Streams & KSQL</h1>
             <h2>{date}</h2>
           </section>
           {slides.map((deck, deckIndex) => {

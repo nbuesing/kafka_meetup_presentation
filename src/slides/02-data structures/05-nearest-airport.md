@@ -1,0 +1,25 @@
+## AVRO
+
+#### Nearest Airport
+
+```json
+{
+  "namespace": "com.objectpartners.buesing.avro",
+  "name": "NearestAirport",
+  "type": "record",
+  "fields": [
+    {
+      "name": "airport",
+      "type": "string"
+    },
+    {
+      "name": "latitude",
+      "type": "double"
+    },
+    {
+      "name": "longitude",
+      "type": "double"
+    }
+  ]
+}
+```

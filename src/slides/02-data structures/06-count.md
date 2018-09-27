@@ -1,0 +1,21 @@
+## AVRO
+
+#### Count
+
+```json
+{
+  "namespace": "com.objectpartners.buesing.avro",
+  "name": "Count",
+  "type": "record",
+  "fields": [
+    {
+      "name": "label",
+      "type": "string"
+    },
+    {
+      "name": "value",
+      "type": "int"
+    }
+  ]
+}
+```

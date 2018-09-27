@@ -1,0 +1,21 @@
+## AVRO
+
+#### Location
+
+```json
+{
+  "namespace": "com.objectpartners.buesing.avro",
+  "name": "Location",
+  "type": "record",
+  "fields": [
+    {
+      "name": "latitude",
+      "type": "double"
+    },
+    {
+      "name": "longitude",
+      "type": "double"
+    }
+  ]
+}
+```
